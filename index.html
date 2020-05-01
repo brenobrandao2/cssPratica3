@@ -18,30 +18,27 @@
         background-color: #1a2e61;
     }
     #div1 {
-        width: 20%;
-        display: inline-block;
-        text-align: center;
+        margin-left: 20px;
     }
     #div2 {
         width: 79%;
         background-color: darkgreen;
-        display: inline-block;
     }
     #div2 p {
         top: 50%;
         left: 50%;
     }
     #ul1{
-        background-color: black;
+        width: 50%;
     }
-    ul {
+    #header ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
     }
 
-    li {
+    #header li {
         float: left;
     }
 
@@ -66,17 +63,8 @@
         color: white
     }
 
-    #main {
-        background-color: gray;
-        margin: 10px;
-        padding-top: 1px;
-        padding-bottom: 10px;
-    }
-
-    #article {
-        background-color: gainsboro;
-        margin-left: 10px;
-        margin-right: 10px;
+    #article1 {
+        background-color: white;
     }
 
     #otime {
@@ -100,13 +88,49 @@
         align-items: center;
     }
 
-    .main {
+    article {
         display: inline-block;
     }
 
-    #main2 {
-        width: 30%;
+    #section1 {
+        background-color: gray;
+        margin: 10px;
+        padding-top: 1px;
+        padding-bottom: 10px;
+        width: 69%;
     }
+
+    #section2 {
+        background-color: gainsboro;
+        margin: 10px;
+    }
+    
+    .sectionInline {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #section3 {
+        background-color: rgb(18, 18, 109);
+        color: #9ec8ff;
+        width: 30%;
+        height: 800px;
+        position: absolute;
+    }
+
+    #footer {
+        height: 80px;
+        background-color: black;
+        color: white;
+        font-size: 14pt;
+        line-height: 80px;
+        padding-left: 20px;
+    }
+    
+    #data {
+        color: white
+    }
+
 </style>
 </head>
 
@@ -114,48 +138,55 @@
 	<header id="header">
         <nav id="nav1">
             <div id="div1">
-                <ul>
-                    <li><a href="#">Bol</a></li>
+                <ul class="sectionInline" id="ul1">
                     <li><a href="#">Uol</a></li>
+                    <li><a href="#">Bol</a></li>
                     <li><a href="#">Globo</a></li>
                     <li><a href="#">Yahoo</a></li>
                 </ul>
+                <p class="sectionInline" id="data">10 de novembro de 2019</p>
             </div>
         </nav>
         <nav id="nav2">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#news">Troféus</a></li>
+                <li><a href="#contact">História</a></li>
+                <li><a href="#about">Conselho</a></li>
               </ul>
         </nav>
     </header>
 
     <main>
-        <article id="article">
-            <section id="otime">
-                <p>O Time</p>
+        <article id="article1">
+            <section class="sectionInline" id="section1">
+                <section id="section2">
+                    <section id="otime">
+                        <p>O Time</p>
+                    </section>
+                    <section id="textos">
+                        <div class="divLoren"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, consectetur sit iste atque nisi odio voluptatem, praesentium corrupti est et velit tempore commodi itaque neque beatae incidunt sequi enim eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, accusamus. Corrupti earum voluptatem ab quidem! Distinctio iure repellat repellendus necessitatibus error ipsa consequuntur nobis? Obcaecati delectus repudiandae voluptas excepturi iure!</p></div>
+                        <div class="divLoren"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nisi corporis dolorum aliquam soluta fugit saepe officiis dolores sunt minima excepturi et, illum maiores pariatur doloremque quo inventore blanditiis. Iure!</p></div>
+                        <div class="divLoren"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam exercitationem explicabo fugiat! Repellat velit similique, commodi expedita culpa eaque quidem. Quis dolor illum quasi distinctio culpa veritatis neque nihil.</p></div>
+                        <div class="divLoren"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, architecto sint. Unde maiores possimus minus quam tempore numquam ex a soluta non amet necessitatibus, quae, aperiam suscipit magnam ipsum ducimus.</p></div>
+                    </section>
+                </section>
             </section>
-            <section id="textos">
-                <div class="divLoren"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, consectetur sit iste atque nisi odio voluptatem, praesentium corrupti est et velit tempore commodi itaque neque beatae incidunt sequi enim eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, accusamus. Corrupti earum voluptatem ab quidem! Distinctio iure repellat repellendus necessitatibus error ipsa consequuntur nobis? Obcaecati delectus repudiandae voluptas excepturi iure!</p></div>
-                <div class="divLoren"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nisi corporis dolorum aliquam soluta fugit saepe officiis dolores sunt minima excepturi et, illum maiores pariatur doloremque quo inventore blanditiis. Iure!</p></div>
-                <div class="divLoren"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam exercitationem explicabo fugiat! Repellat velit similique, commodi expedita culpa eaque quidem. Quis dolor illum quasi distinctio culpa veritatis neque nihil.</p></div>
-                <div class="divLoren"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, architecto sint. Unde maiores possimus minus quam tempore numquam ex a soluta non amet necessitatibus, quae, aperiam suscipit magnam ipsum ducimus.</p></div>
-            </section>
-        </article>
-        <article>
-            <section>
+            <section class="sectionInline" id="section3">
                 <div>
                     <ul>
-                        <li><a href="#">Feed</a></li>
-                        <li><a href="#">Noticias</a></li>
-                        <li><a href="#">Comedia</a></li>
+                        <li><p>Feed</p></li>
+                        <li><p>Noticias</p></li>
+                        <li><p>Comedia</p></li>
                     </ul>
                 </div>
             </section>
         </article>
     </main>
+
+    <footer id="footer"> 
+        <p>Este é um rodapé</p>
+    </footer>
 
     <footer>
     </footer>
